@@ -7,23 +7,30 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#236CFF",
+    "light": "#236CFF",
+    "dark": "#236CFF",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#236CFF",
+      "to": "#236CFF"
     }
+  },
+  "layout": "topnav",
+  "background": {
+    "style": "grid"
+  },
+  "topbar": {
+    "style": "default"
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "About",
+      "url": "https://www.intuit.com/company/"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Sign In",
+    "url": "https://accounts.intuit.com/app/sign-in?app_group=Identity&asset_alias=Intuit.cto.iam.ius&redirect_uri=https%3A%2F%2Faccounts.intuit.com%2Fapp%2Faccount-manager%2Foverview%3FpiuInFlyout%3Dtrue%26openBlueDot%3Dtrue%26accountSwitcherInFlyout%3Dtrue%26rgn%3DUS%26prgn%3DUS&single_sign_on=false&appfabric=true"
   },
   "tabs": [
     {
@@ -33,46 +40,64 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Developer Github",
+      "icon": "github",
+      "url": "https://github.com/intuitdeveloper"
     },
     {
       "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "icon": "youtube",
+      "url": "https://www.youtube.com/user/intuit?themeRefresh=1"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://www.intuit.com/blog/"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Home",
+      "pages": ["home.mdx/introduction"]
+    },
+    {
+      "group": "Getting Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "getting-started/overview",
+        "getting-started/authenticate",
+        "getting-started/scopes",
+        "getting-started/endpoints",
+        {
+          "group": "Testing",
+          "pages": [
+            "getting-started/testing",
+            "getting-started/insomnia",
+            "getting-started/graphql"
+          ]
+        }
       ]
     },
     {
-      "group": "Essentials",
+      "group": "GraphQL Concepts",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "graphql/overview",
+        "graphql/query",
+        "graphql/mutation",
+        "graphql/introspection",
+        "graphql/variables",
+        "graphql/directives",
+        "graphql/fragments",
+        "graphql/pagination",
+        "graphql/best-practices"
       ]
     },
+    {
+      "group": "FAQ",
+      "pages": ["faqs/overview", "faqs/graph", "faqs/payroll", "faqs/error", "faqs/api"]
+    }
     {
       "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
+      "pages": ["api-reference/introduction"]
     },
     {
       "group": "Endpoint Examples",
@@ -84,8 +109,8 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "x": "https://x.com/Intuit",
+    "linkedin": "https://www.linkedin.com/company/intuit/",
+    "facebook": "https://www.facebook.com/intuit"
   }
 }
