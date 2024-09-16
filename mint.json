@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Intuit",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -15,12 +15,13 @@
       "to": "#236CFF"
     }
   },
-  "layout": "topnav",
-  "background": {
-    "style": "grid"
-  },
+  "theme": "prism",
+
   "topbar": {
     "style": "default"
+  },
+  "background": {
+    "style": "grid"
   },
   "topbarLinks": [
     {
@@ -93,8 +94,14 @@
     },
     {
       "group": "FAQ",
-      "pages": ["faqs/overview", "faqs/graph", "faqs/payroll", "faqs/error", "faqs/api"]
-    }
+      "pages": [
+        "faqs/overview",
+        "faqs/graph",
+        "faqs/payroll",
+        "faqs/error",
+        "faqs/api"
+      ]
+    },
     {
       "group": "API Documentation",
       "pages": ["api-reference/introduction"]
